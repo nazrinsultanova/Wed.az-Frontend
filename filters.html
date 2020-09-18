@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/filters.css" type="text/css">
+    <link rel="icon" href="icons/favicon_v1.ico" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wed.az - Gəlinlik</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header-container">
+           <div class="header-top">
+              <div class="header-top-content">
+                 <div class="header-left">
+                    <a href="index.html"><img class="logo" src="icons/icon.svg"></a>
+                    <div class="lang-container">
+                       <div class="lang-content">
+                          <span>AZ</span>
+                          <img src="icons/arrow.png">
+                       </div>
+                       <div class="lang-menu">
+                          <ul class="lang-dropdown">
+                             <li>EN</li>
+                             <li id="russian">RU</li>
+                          </ul>
+                       </div>
+                    </div>
+                 </div>
+                 <div class="header-center"></div>
+                 <div class="header-search">
+                    <input type="text" placeholder="Axtar...">
+                    <img src="icons/search.svg">
+                 </div>
+                 <div class="header-right">
+                    <div class="flexbox-header">
+                       <div class="header-heart" style="margin-right: 10px;">
+                          <a  href="register.html"><img src="icons/heart.svg"></a>
+                       </div>
+                       <div class="header-account" onclick="Display(event)">
+                          <p>Hesabım</p>
+                       </div>
+                    </div>
+                    <div id="header-dropdown" style="display: none;">
+                       <ul class="login-register">
+                          <li><a href="login.html">Giriş</a></li>
+                          <li><a href="register.html">Qeydiyyat</a></li>
+                       </ul>
+                    </div>
+                 </div>
+              </div>
+           </div>
+           <div class="vertical-line"></div>
+           <div class="header-bottom">
+              <div class="header-bottom-content">
+                 <ul class="header-bottom-menu">
+                    <li><img src="icons/icon1.svg"><span class="menu-item">TOY MƏKANLARI</span>
+                       <ul id="first-dropdown">
+                       </ul>
+                    </li>
+                    <li><img src="icons/icon2.svg"><span class="menu-item">TOY HAZIRLIĞI</span>
+                       <ul id="second-dropdown">
+                          <div id="child-left">
+
+                          </div>
+                          <div id="child-right">
+                          </div>
+                       </ul>
+                    </li>
+                    <li><a href="#"><img src="icons/icon3.svg"><span class="menu-item">BALAYI</span></a></li>
+                    <li><a href="#"><img src="icons/icon4.svg"><span class="menu-item">SİYAHI</span></a></li>
+                    <li><a href="#"><img src="icons/icon5.svg"><span class="menu-item">KAMPANİYALAR</span></a></li>
+                    <li><a href="#"><img src="icons/icon6.svg"><span class="menu-item">JURNAL</span></a></li>
+                 </ul>
+              </div>
+           </div>
+        </div>
+
+
+        <div class="home-container">
+            <div class="div-1110">
+            <div class="home-content">
+                    <div class="filters-main-links">
+                        <a class="button button-first" href="index.html">Əsas Səhifə</a>
+                        <a class="button button-second" href="#">Gəlinlik</a>
+                    </div>
+                    <h1>Gəlinlik</h1>
+                    <p>Toyun şahzadəsi üçün Bakının ən gözəl gəlinlikləri</p>
+                 </div> 
+            </div>
+                <div class="home-opacity"></div>
+                </div>
+
+
+<div class="bride-filters-header">
+    <h3>Seçilmiş filtrlər</h3>
+</div>         
+
+<div class="bride-filters-container">
+    <div class="bride-filters-top">
+        <div class="div-1110">
+            <div class="bride-filters-top-main">
+            <span class="special-text">15 nəticə</span>
+            <div class="switch-container">
+                <div class="switch-list disabled" onclick="replaceDivs()">
+                    <img src="icons/switch-list.svg">
+                    <span>List</span>
+                </div>
+
+                <div class="switch-map" onclick="replaceDivs()">
+                    <img src="icons/switch-map.svg">
+                    <span>Xəritə</span>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+<div class="div-1110">
+    <div class="bride-filters-bottom">
+       <div class="bottom-left">
+          <ul id="dropdown-filter">
+
+            <li id="item10" class="dropdown-li">
+               <span>
+                  <p class="filter-name">Şəhərlər</p> 
+                 <img id="arrow-img" src="icons/arrow2.svg">
+               </span>
+               <ul class="submenu-open" style="list-style-type: none;">
+                  <li class="submenu-item">
+                     <label class="chechbox-container">
+                        <div>
+                          <input onchange="checkedFilter(this)" type="checkbox" name="filter" value="city-1">
+                                    Bakı
+                        </div>
+                        <span class="amount"></span>
+                     </label>
+                  </li>
+               </ul>
+            </li>
+
+
+   
+             <li id="item10" class="dropdown-li">
+               <span>
+                  <p class="filter-name">Seqment</p> 
+                 <img id="arrow-img" src="icons/arrow2.svg">
+               </span>
+               <ul class="submenu-open">
+                  <li class="submenu-item">
+                     <label class="chechbox-container">
+                        <div>
+                          <input onchange="checkedFilter(this)" type="checkbox" name="filter" value="segment-1">
+                          <!-- <span class="checkbox-mark"></span> -->
+                                    Lux
+                        </div>
+                        <span class="amount"></span>
+                     </label>
+                  </li>
+                  <li class="submenu-item">
+                     <label class="chechbox-container">
+                        <div>
+                           <input onchange="checkedFilter(this)" type="checkbox" name="filter" value="segment-2">
+                          <!-- <span class="checkbox-mark"></span> -->
+                                    Premium
+                        </div>
+                        <span class="amount"></span>
+                     </label>
+                  </li>
+
+                  <li class="submenu-item">
+                     <label class="chechbox-container">
+                        <div>
+                           <input onchange="checkedFilter(this)" type="checkbox" name="filter" value="segment-3">
+                          <!-- <span class="checkbox-mark"></span> -->
+                                    Orta
+                        </div>
+                        <span class="amount"></span>
+                     </label>
+                  </li>
+
+                  <li class="submenu-item">
+                     <label class="chechbox-container">
+                        <div>
+                           <input onchange="checkedFilter(this)" type="checkbox" name="filter" value="segment-4">
+                          <!-- <span class="checkbox-mark"></span> -->
+                                    Ekonom
+                        </div>
+                        <span class="amount"></span>
+                     </label>
+                  </li>
+               </ul>
+            </li>
+
+
+            
+            <li id="item5" class="dropdown-li">
+               <span>
+                 <p class="filter-name">Metro Stansiyaları</p>  
+                 <img id="arrow-img" src="icons/arrow2.svg">
+               </span>
+               <ul class="submenu-open scroll">
+                  <li class="submenu-item">
+                     <label class="chechbox-container">
+                        <div>
+                          <input onchange="checkedFilter(this)" type="checkbox" name="filter" value="metro-1">
+                          <!-- <span class="checkbox-mark"></span> -->
+                          İçərişəhər
+                        </div>
+                        <span class="amount"></span>
+                     </label>
+                  </li>
+                  <li class="submenu-item">
+                     <label class="chechbox-container">
+                        <div>
+                          <input onchange="checkedFilter(this)" type="checkbox" name="filter" value="metro-2">
+                          <!-- <span class="checkbox-mark"></span> -->
+                          Sahil
+                        </div>
+                        <span class="amount"></span>
+                     </label>
+                  </li>
+
+                  <li class="submenu-item">
+                     <label class="chechbox-container">
+                        <div>
+                           <input onchange="checkedFilter(this)" type="checkbox" name="filter" value="metro-3">
+                          <!-- <span class="checkbox-mark"></span> -->
+                          28 May
+                        </div>
+                        <span class="amount"></span>
+                     </label>
+                  </li>
+
+                  <li class="submenu-item">
+                     <label class="chechbox-container">
+                        <div>
+                           <input onchange="checkedFilter(this)" type="checkbox" name="filter" value="metro-4">
+                          <!-- <span class="checkbox-mark"></span> -->
+                          Gənclik
+                        </div>
+                        <span class="amount"></span>
+                     </label>
+                  </li>
+
+
+                  <li class="submenu-item">
+                     <label class="chechbox-container">
+                        <div>
+                           <input onchange="checkedFilter(this)" type="checkbox" name="filter" value="metro-5">
+                          <!-- <span class="checkbox-mark"></span> -->
+                          Nəriman Nərimanov
+                        </div>
+                        <span class="amount"></span>
+                     </label>
+                  </li>
+
+                  <li class="submenu-item">
+                     <label class="chechbox-container">
+                        <div>
+                           <input onchange="checkedFilter(this)" type="checkbox" name="filter" value="metro-6">
+                          <!-- <span class="checkbox-mark"></span> -->
+                          Bakmil
+                        </div>
+                        <span class="amount"></span>
+                     </label>
+                  </li>
+
+                  <li class="submenu-item">
+                     <label class="chechbox-container">
+                        <div>
+                           <input onchange="checkedFilter(this)" type="checkbox" name="filter" value="metro-7">
+                          <!-- <span class="checkbox-mark"></span> -->
+                          Ulduz
+                        </div>
+                        <span class="amount"></span>
+                     </label>
+                  </li>
+
+                  <li class="submenu-item">
+                     <label class="chechbox-container">
+                        <div>
+                           <input onchange="checkedFilter(this)" type="checkbox" name="filter" value="metro-8">
+                          <!-- <span class="checkbox-mark"></span> -->
+                          Koroğlu
+                        </div>
+                        <span class="amount"></span>
+                     </label>
+                  </li> 
+               </ul>
+            </li>
+
+
+
+
+            <li id="item6" class="dropdown-li">
+               <span>
+                  <p class="filter-name">Xidmətlər</p> 
+                 <img id="arrow-img" src="icons/arrow2.svg">
+               </span>
+               <ul class="submenu-open">
+
+                  <li class="submenu-item">
+                     <label class="chechbox-container">
+                        <div>
+                           <input onchange="checkedFilter(this)" type="checkbox" name="filter" value="services-21">
+                          <!-- <span class="checkbox-mark"></span> -->
+                                    Kirayə
+                        </div>
+                        <span class="amount"></span>
+                     </label>
+                  </li>
+
+
+                  <li class="submenu-item">
+                     <label class="chechbox-container">
+                        <div>
+                           <input onchange="checkedFilter(this)" type="checkbox" name="filter" value="services-22">
+                          <!-- <span class="checkbox-mark"></span> -->
+                                    Satış
+                        </div>
+                        <span class="amount"></span>
+                     </label>
+                  </li>
+
+                  <li class="submenu-item">
+                     <label class="chechbox-container">
+                        <div>
+                          
+                           <input onchange="checkedFilter(this)" type="checkbox" name="filter" value="services-23">
+                          <!-- <span class="checkbox-mark"></span> -->
+                                    Tikiliş
+                        </div>
+                        <span class="amount"></span>
+                     </label>
+                  </li>
+
+                  <li class="submenu-item">
+                     <label class="chechbox-container">
+                        <div>
+                           <input onchange="checkedFilter(this)" type="checkbox" name="filter" value="services-24">
+                          <!-- <span class="checkbox-mark"></span> -->
+                                    Yeni
+                        </div>
+                        <span class="amount"></span>
+                     </label>
+                  </li>
+
+                  <li class="submenu-item">
+                     <label class="chechbox-container">
+                        <div>
+                        <input onchange="checkedFilter(this)" type="checkbox" name="filter" value="services-25">
+                          <!-- <span class="checkbox-mark"></span> -->
+                                    2-ci əl
+                        </div>
+                        <span class="amount"></span>
+                     </label>
+                  </li>
+               </ul>
+                  
+                
+               
+               <li id="item7" class="dropdown-li">
+                  <span>
+                     <p class="filter-name">Kampaniyalar</p> 
+                    <img id="arrow-img" src="icons/arrow2.svg">
+                  </span>
+                  <ul class="submenu-open">
+                     <li class="submenu-item">
+                        <label class="chechbox-container">
+                           <div>
+                           <input onchange="checkedFilter(this)" type="checkbox" name="filter" value="campaigns-1">
+                             <!-- <span class="checkbox-mark"></span> -->
+                                       Var
+                           </div>
+                           <span class="amount"></span>
+                        </label>
+                     </li>
+
+                     <li class="submenu-item">
+                        <label class="chechbox-container">
+                           <div>
+                              <input onchange="checkedFilter(this)" type="checkbox" name="filter" value="campaigns-2">
+                             <!-- <span class="checkbox-mark"></span> -->
+                                       Yox
+                           </div>
+                           <span class="amount"></span>
+                        </label>
+                     </li>
+                  </ul>
+               </li>
+
+
+               <li id="item9" class="dropdown-li">
+                  <span>
+                     <p class="filter-name">Aksesuarlar</p> 
+                    <img id="arrow-img" src="icons/arrow2.svg">
+                  </span>
+                  <ul class="submenu-open">
+                     <li class="submenu-item">
+                        <label class="chechbox-container">
+                           <div>
+                             <input onchange="checkedFilter(this)" type="checkbox" name="filter" value="features-1">
+                             <!-- <span class="checkbox-mark"></span> -->
+                                       Əlcək
+                           </div>
+                           <span class="amount"></span>
+                        </label>
+                     </li>
+
+                     <li class="submenu-item">
+                        <label class="chechbox-container">
+                           <div>
+                              <input onchange="checkedFilter(this)" type="checkbox" name="filter" value="features-2">
+                             <!-- <span class="checkbox-mark"></span> -->
+                                       Tac 
+                           </div>
+                           <span class="amount"></span>
+                        </label>
+                     </li>
+
+                     <li class="submenu-item">
+                        <label class="chechbox-container">
+                           <div>
+                              <input onchange="checkedFilter(this)" type="checkbox" name="filter" value="features-3">
+                             <!-- <span class="checkbox-mark"></span> -->
+                                       Buket
+                           </div>
+                           <span class="amount"></span>
+                        </label>
+                     </li>
+
+                     <li class="submenu-item">
+                        <label class="chechbox-container">
+                           <div>
+                              <input onchange="checkedFilter(this)" type="checkbox" name="filter" value="features-4">
+                             <!-- <span class="checkbox-mark"></span> -->
+                                       Örtük
+                           </div>
+                           <span class="amount"></span>
+                        </label>
+                     </li>
+
+                     <li class="submenu-item">
+                        <label class="chechbox-container">
+                           <div>
+                              <input onchange="checkedFilter(this)" type="checkbox" name="filter" value="features-5">
+                             <!-- <span class="checkbox-mark"></span> -->
+                                       Duvaq
+                           </div>
+                           <span class="amount"></span>
+                        </label>
+                     </li>
+
+
+                     <li class="submenu-item">
+                        <label class="chechbox-container">
+                           <div>
+                              <input onchange="checkedFilter(this)" type="checkbox" name="filter" value="features-6">
+                             <!-- <span class="checkbox-mark"></span> -->
+                                       Bolero
+                           </div>
+                           <span class="amount"></span>
+                        </label>
+                     </li>
+                  </ul>
+               </li>
+          </ul>
+       </div>
+
+
+
+       <div id="bottom-right">
+          <div class="wedding-dress-container">
+             <div class="wedding-dress-left"></div>
+             <div class="wedding-dress-right">
+                <div class="white-div">
+                   <img id="white-heart" src="icons/white-heart.svg">
+               </div>
+                   <a class="wedding-dress-link" href="#">
+                      <h4>VEGUL Wedding Rooms</h4>
+                      <p>Keyfiyyəti, fərqliliyi və üstünlüyü ilə seçilən gəlinlik və ziyafət geyimlərinin satışı ilə məşğul olan VEGUL Wedding ...</p>
+                   </a>
+                   <p class="wedding-dress-location">
+                      <img src="icons/icon1.svg">
+                     Səbail, Bakı
+                   </p>
+             </div>
+          </div>
+            </div>
+         </div>
+       </div>
+    </div>
+     <div>
+     </div>
+
+
+     <div id="map"></div>
+
+
+
+    <div class="div-1110">
+    <div class="pagination-nav">
+      <ul class="pagination-ul">
+         <li class="page-item-arrow" onclick="Previous()">
+            <a class="page-link">
+               <img src="icons/previous.svg">
+            </a>
+         </li>
+         <li class="page-item active" onclick="Pagination(1)">
+            <a class="page-link">1</a>
+         </li>
+         <li class="page-item" onclick="Pagination(2)">
+            <a class="page-link">2</a>
+         </li>
+         <li class="page-item" onclick="Pagination(3)">
+            <a class="page-link">3</a>
+         </li>
+         <li class="page-item" onclick="Pagination(4)">
+            <a class="page-link">4</a>
+         </li>
+         <li class="page-item" onclick="Pagination(5)">
+            <a class="page-link">5</a>
+         </li>
+         <li class="page-item-arrow" onclick="Next()">
+            <a class="page-link">
+               <img src="icons/next.svg">
+            </a>
+         </li>
+      </ul>
+   </div>
+    </div>
+           
+      
+ 
+
+    <footer>
+      <div class="footer-first-container">
+         <div class="footer-first-content">
+            <div class="div-1110">
+               <div class="flex-container">
+                  <div class="header">
+                     <h3>TOY MƏKANLARI</h3>
+                     <div class="footer-menu">
+                        <a href="#">Şadlıq sarayı</a>
+                        <a href="#">Otel</a>
+                        <a href="#">Restoran</a>
+                        <a href="#">Açıq Hava</a>
+                     </div>
+                  </div>
+                  <div class="header middle">
+                     <h3>TOY HAZIRLIĞI</h3>
+                     <div class="center">
+                        <div class="footer-menu-center">
+                           <a href="#">Gəlinlik</a>
+                           <a href="#">Bəylik və Kişi Geyimi</a>
+                           <a href="#">Fotoqraf</a>
+                           <a href="#">Videoqraf</a>
+                           <a href="#">Təşkilatçı</a>
+                        </div>
+                        <div class="footer-menu-center">
+                           <a href="#">Keyterinq</a>
+                           <a href="#">Xına</a>
+                           <a href="#">Çiçəkçi</a>
+                           <a href="#">Dəvətnamə</a>
+                           <a href="#">Ziyafət Geyimi</a>
+                        </div>
+                        <div class="footer-menu-center">
+                           <a href="#">Gözəllik Mərkəzi</a>
+                           <a href="#">Bərbər</a>
+                           <a href="#">Rəqs Kursu</a>
+                           <a href="#">Şokolad və Xonça</a>
+                           <a href="#">Şirniyyat və Tort</a>
+                           <a href="#">Estetik və Spa Mərkəzi</a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="header">
+                     <h3>WED.AZ</h3>
+                     <div class="footer-menu">
+                        <a href="#">Haqqımızda</a>
+                        <a href="#">Əlaqə</a>
+                        <a href="#">Kəşf et</a>
+                        <a href="#">Kampaniyalar</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="footer-colored">
+         <div class="footer-colored-content">
+            <div class="div-1110">
+               <div class="flex-container">
+                  <div class="left">
+                     <a href="#">
+                     <img src="icons/facebook.svg">
+                     Facebook
+                     </a>
+                     <a href="#">
+                     <img src="icons/youtube.svg">
+                     YouTube
+                     </a>
+                     <a href="#">
+                     <img src="icons/instagram.svg">
+                     Instagram
+                     </a>
+                  </div>
+                  <div class="right">
+                     <a href="#">Biznes Partnyor</a>
+                     <a href="#">Partnyor girişi</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="footer-second-container">
+         <div class="footer-second-content">
+            <div class="div-1110">
+               <div class="flex-container">
+                  <p>© Saytın bütün hüquqları qorunur və məlumatlardan icazəsiz istifadə qadağandır.</p>
+                  <p>Bu platforma <a href="#"><strong><span style="color: #703b94;">wedpro</span></strong></a> məhsuludur.</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+        </div>
+        
+    <script src="JS/ajax.js"></script>
+    <script src="JS/main.js"></script>
+    <script src="JS/ajax-filters.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBMMBYU10r-RuvDKvbCRQP60nwWbGYvsCA&"
+    async defer></script>
+    <script src="JS/bridal-dress-ajax.js"></script>
+    
+</body>
+</html>

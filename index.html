@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <link rel="stylesheet" href="css/style.css" type="text/css">
+      <link rel="stylesheet" href="css/responsive.css" type="text/css">
+      <link rel="icon" href="icons/favicon_v1.ico" type="image/png">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Wed.az - Evlilik və toy hazırlığı üçün hər şey bir ünvanda</title>
+   </head>
+   <body>
+      <div class="container">
+         <div class="header-container">
+            <div class="header-top">
+               <div class="header-top-content">
+                  <div class="header-left">
+                     <a href="index.html"><img class="logo" src="icons/icon.svg"></a>
+                     <div class="lang-container">
+                        <div class="lang-content">
+                           <span>AZ</span>
+                           <img src="icons/arrow.png">
+                        </div>
+                        <div class="lang-menu">
+                           <ul class="lang-dropdown">
+                              <li>EN</li>
+                              <li id="russian">RU</li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="header-center">
+                  <div class="header-search">
+                     <input type="text" id="myInput" onkeyup="Search(event)" placeholder="Axtar...">
+                     <img src="icons/search.svg">
+                  </div>
+                  <div class="search-result-container">
+                     <ul class="search-result1" id="search-result">
+                        <li class="search-item">
+                           <a class="search-link" href="#">
+                              <div class="search-left">
+                                 <p>Garden Shop</p>
+                              </div>
+                              <div class="search-right"></div>
+                           </a>
+                        </li>
+
+                        <li id="no-response">Nəticə tapılmadı</li>
+                  
+                     </ul>
+                  </div>
+                  </div>
+               
+                   
+                  <div class="header-right">
+                     <div class="flexbox-header">
+                        <div class="header-heart" style="margin-right: 10px;">
+                           <a  href="register.html"><img src="icons/heart.svg"></a>
+                        </div>
+                        <div class="header-account" onclick="Display(event)">
+                           <p>Hesabım</p>
+                        </div>
+                     </div>
+                     <div id="header-dropdown" style="display: none;">
+                        <ul class="login-register">
+                           <li><a href="login.html">Giriş</a></li>
+                           <li><a href="register.html">Qeydiyyat</a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="vertical-line"></div>
+            <div class="header-bottom">
+               <div class="header-bottom-content">
+                  <ul class="header-bottom-menu">
+                     <li><img src="icons/icon1.svg"><span class="menu-item">TOY MƏKANLARI</span>
+                        <ul id="first-dropdown">
+                     
+                        </ul>
+                     </li>
+                     <li><img src="icons/icon2.svg"><span class="menu-item">TOY HAZIRLIĞI</span>
+                        <ul id="second-dropdown">
+                           <div id="child-left">
+
+                           </div>
+                           <div id="child-right">
+                              
+                           </div>
+                        </ul>
+                     </li>
+                     <li><a href="#"><img src="icons/icon3.svg"><span class="menu-item">BALAYI</span></a></li>
+                     <li><a href="#"><img src="icons/icon4.svg"><span class="menu-item">SİYAHI</span></a></li>
+                     <li><a href="#"><img src="icons/icon5.svg"><span class="menu-item">KAMPANİYALAR</span></a></li>
+                     <li><a href="#"><img src="icons/icon6.svg"><span class="menu-item">JURNAL</span></a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="home-container">
+            <div class="home-content">
+               <div class="home-search-container">
+                  <div class="home-search-content">
+                     <div class="home-search">
+                        <div class="home-search-text">
+                           <h1>Evlənən cütlüklər üçün <br>toy hazırlığını asanlaşdırdıq</h1>
+                           <p>Evlilik və toy hazırlığı üçün hər şey bir ünvanda</p>
+                        </div>
+                        <div class="home-search-divs">
+                           <div class="home-search-big">
+                              <span>Kateqoriya</span>
+                              <div class="home-menu">
+                                 <h4>Gəlinlik</h4>
+                                 <img src="icons/arrow-big.svg">
+                              </div>
+                           </div>
+                           <div class="home-search-big">
+                              <span>Şəhər</span>
+                              <div class="home-menu">
+                                 <h4>Bakı</h4>
+                                 <img src="icons/arrow-big.svg">
+                              </div>
+                           </div>
+                           <a href="#"><button>Axtar</button></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="home-category-container">
+            <div class="home-category-content">
+               <div class="div-1110">
+                  <h2 class="category-title">Kateqoriyalar</h2>
+                  <div class="flex-container">
+                     <div class="image-large" style="background-image: url(images/image1.jpg);">
+                        <a class="button-category" href="#">Toy Məkanları</a>
+                     </div>
+                     
+                     <div class="image-small" style="background-image: url(images/image2.jpg);">
+                        <a class="button-category" href="#">Gəlinlik</a>
+                     </div>
+                  </div>
+                  <div class="flex-container">
+                     <div class="image-small" style="background-image: url(images/image3.jpg);">
+                        <a class="button-category" href="#">Bəylik və Kişi Geyimi</a>
+                     </div>
+                     <div class="image-small" style="background-image: url(images/image4.jpg);">
+                        <a class="button-category" href="#">Fotoqraf</a>
+                     </div>
+                     <div class="image-small" style="background-image: url(images/image5.jpg);">
+                        <a class="button-category" href="#">Videoqraf</a>
+                     </div>
+                  </div>
+                  <div class="flex-container">
+                     <div class="image-small" style="background-image: url(images/image6.jpg);">
+                        <a class="button-category" href="#">Təşkilatçı</a>
+                     </div>
+                     <div class="image-small" style="background-image: url(images/image7.jpg);">
+                        <a class="button-category" href="#">Keyteriq</a>
+                     </div>
+                     <div class="image-small" style="background-image: url(images/image8.jpg);">
+                        <a class="button-category" href="#">Xına</a>
+                     </div>
+                  </div>
+                  <button class="more-items">
+                  <img src="icons/plus.svg">
+                  Hamısına bax
+                  </button>
+               </div>
+            </div>
+         </div>
+         <div class="home-plan-container">
+            <h3 class="main-sub-text">Wed.az platforması <br> cütlüklər üçün nə edir?</h3>
+            <p class="sub-text">Artıq cütlüklər toy, nişan, xına hazırlığı üçün lazımi xidmətləri tapır, müqayisə aparır, <br> zövq və büdcəyə uyğun peşəkarlarla rahat əlaqə saxlaya bilir.</p>
+            <div class="div-1110">
+               <div class="home-plan-content">
+                  <div class="flex-container">
+                     <div class="wed-box">
+                        <img class="wed-icon1" src="icons/wed-icon1.svg">
+                        <h3>Toy ehtiyaclarını <br> burada axtarın</h3>
+                     </div>
+                     <div class="wed-box">
+                        <img class="wed-icon2" src="icons/wed-icon2.svg">
+                        <h3>Sizə ən uyğun <br> olanı seçin</h3>
+                     </div>
+                     <div class="wed-box">
+                        <img class="wed-icon3" src="icons/wed-icon3.svg">
+                        <h3>Əlaqə saxlayın <br> və razılaşın</h3>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="home-places-container">
+            <div id="home-places-content">
+               <div id="div-1110">
+                  <div id="group">
+                     <div class="places-top">
+                        <div class="places-top-left">
+                           <h2 style="margin: 0;"> </h2>
+                           <p style="font-size: 18px;">Toyunuz üçün Şadlıq Sarayları, Restoranlar, Açıq Hava məkanları, Otellər</p>
+                        </div>
+                        <div class="places-top-right">
+                           <a class="right-button" href="#">
+                           <img src="icons/white-plus.svg">
+                           Hamısına bax</a>
+                        </div>
+                     </div>
+                     <div class="flex-container">
+                        <div class="places-bottom">
+                           <div class="places-box">
+                              <img src="images/place-img1.jpg">
+                              <div class="white-div">
+                                 <img id="white-heart" src="icons/white-heart.svg">
+                              </div>
+                           </div>
+                           <div class="places-box-second">
+                              <div class="places-box-content-upper">
+                                 <a href="#">
+                                    <h4></h4>
+                                 </a>
+                              </div>
+                              <div class="places-box-content-lower">
+                                 <p>
+                                    <img src="icons/icon1.svg">
+                                    Yasamal, Bakı
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="places-bottom">
+                           <div class="places-box">
+                              <img src="images/place-img2.jpg">
+                              <div class="white-div">
+                                 <img id="white-heart"src="icons/white-heart.svg">
+                              </div>
+                           </div>
+                           <div class="places-box-second">
+                              <div class="places-box-content-upper">
+                                 <a href="#">
+                                    <h4></h4>
+                                 </a>
+                              </div>
+                              <div class="places-box-content-lower">
+                                 <p>
+                                    <img src="icons/icon1.svg">
+                                    Yasamal, Bakı
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="places-bottom">
+                           <div class="places-box">
+                              <img src="images/place-img3.jpg">
+                              <div class="white-div">
+                                 <img id="white-heart"src="icons/white-heart.svg">
+                              </div>
+                           </div>
+                           <div class="places-box-second">
+                              <div class="places-box-content-upper">
+                                 <a href="#">
+                                    <h4></h4>
+                                 </a>
+                              </div>
+                              <div class="places-box-content-lower">
+                                 <p>
+                                    <img src="icons/icon1.svg">
+                                    Yasamal, Bakı
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="places-bottom">
+                           <div class="places-box">
+                              <img src="images/place-img4.jpg">
+                              <div class="white-div">
+                                 <img id="white-heart"src="icons/white-heart.svg">
+                              </div>
+                           </div>
+                           <div class="places-box-second">
+                              <div class="places-box-content-upper">
+                                 <a href="#">
+                                    <h4></h4>
+                                 </a>
+                              </div>
+                              <div class="places-box-content-lower">
+                                 <p>
+                                    <img src="icons/icon1.svg">
+                                    Yasamal, Bakı
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div id="group">
+                     <div class="places-top">
+                        <div class="places-top-left">
+                           <h2 style="margin: 0;"></h2>
+                           <p style="font-size: 18px;">Toyun şahzadəsi üçün Bakının ən gözəl gəlinlikləri</p>
+                        </div>
+                        <div class="places-top-right">
+                           <a class="right-button" href="#">
+                           <img src="icons/white-plus.svg">
+                           Hamısına bax</a>
+                        </div>
+                     </div>
+                     <div class="flex-container">
+                        <div class="places-bottom">
+                           <div class="places-box">
+                              <img src="images/bride-img1.jpg">
+                              <div class="white-div">
+                                 <img id="white-heart"src="icons/white-heart.svg">
+                              </div>
+                           </div>
+                           <div class="places-box-second">
+                              <div class="places-box-content-upper">
+                                 <a href="#">
+                                    <h4></h4>
+                                 </a>
+                              </div>
+                              <div class="places-box-content-lower">
+                                 <p>
+                                    <img src="icons/icon1.svg">
+                                    Səbail, Bakı
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="places-bottom">
+                           <div class="places-box">
+                              <img src="images/bride-img2.jpg">
+                              <div class="white-div">
+                                 <img class="white-heart"src="icons/white-heart.svg">
+                              </div>
+                           </div>
+                           <div class="places-box-second">
+                              <div class="places-box-content-upper">
+                                 <a href="#">
+                                    <h4></h4>
+                                 </a>
+                              </div>
+                              <div class="places-box-content-lower">
+                                 <p>
+                                    <img src="icons/icon1.svg">
+                                    Yasamal, Bakı
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="places-bottom">
+                           <div class="places-box">
+                              <img src="images/bride-img3.jpg">
+                              <div class="white-div">
+                                 <img class="white-heart"src="icons/white-heart.svg">
+                              </div>
+                           </div>
+                           <div class="places-box-second">
+                              <div class="places-box-content-upper">
+                                 <a href="#">
+                                    <h4></h4>
+                                 </a>
+                              </div>
+                              <div class="places-box-content-lower">
+                                 <p>
+                                    <img src="icons/icon1.svg">
+                                    Nəsimi, Bakı
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="places-bottom">
+                           <div class="places-box">
+                              <img src="images/bride-img4.jpg">
+                              <div class="white-div">
+                                 <img class="white-heart"src="icons/white-heart.svg">
+                              </div>
+                           </div>
+                           <div class="places-box-second">
+                              <div class="places-box-content-upper">
+                                 <a href="#">
+                                    <h4></h4>
+                                 </a>
+                              </div>
+                              <div class="places-box-content-lower">
+                                 <p>
+                                    <img src="icons/icon1.svg">
+                                    Nəsimi, Bakı
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div id="group">
+                     <div class="places-top">
+                        <div class="places-top-left">
+                           <h2 style="margin: 0;"></h2>
+                           <p style="font-size: 18px;">Sevginizi əbədiləşdirəcək ən peşəkar fotoqraflar xidmətinizdədir</p>
+                        </div>
+                        <div class="places-top-right">
+                           <a class="right-button" href="#">
+                           <img src="icons/white-plus.svg">
+                           Hamısına bax</a>
+                        </div>
+                     </div>
+                     <div class="flex-container">
+                        <div class="places-bottom">
+                           <div class="places-box">
+                              <img src="images/photo1.jpg">
+                              <div class="white-div">
+                                 <img class="white-heart"src="icons/white-heart.svg">
+                              </div>
+                           </div>
+                           <div class="places-box-second">
+                              <div class="places-box-content-upper">
+                                 <a href="#">
+                                    <h4></h4>
+                                 </a>
+                              </div>
+                              <div class="places-box-content-lower">
+                                 <p>
+                                    <img src="icons/icon1.svg">
+                                    Yasamal, Bakı
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="places-bottom">
+                           <div class="places-box">
+                              <img src="images/photo2.jpg">
+                              <div class="white-div">
+                                 <img class="white-heart"src="icons/white-heart.svg">
+                              </div>
+                           </div>
+                           <div class="places-box-second">
+                              <div class="places-box-content-upper">
+                                 <a href="#">
+                                    <h4></h4>
+                                 </a>
+                              </div>
+                              <div class="places-box-content-lower">
+                                 <p>
+                                    <img src="icons/icon1.svg">
+                                    Yasamal, Bakı
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="places-bottom">
+                           <div class="places-box">
+                              <img src="images/photo3.jpg">
+                              <div class="white-div">
+                                 <img class="white-heart"src="icons/white-heart.svg">
+                              </div>
+                           </div>
+                           <div class="places-box-second">
+                              <div class="places-box-content-upper">
+                                 <a href="#">
+                                    <h4></h4>
+                                 </a>
+                              </div>
+                              <div class="places-box-content-lower">
+                                 <p>
+                                    <img src="icons/icon1.svg">
+                                    Nəsimi, Bakı
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="places-bottom">
+                           <div class="places-box">
+                              <img src="images/photo4.jpg">
+                              <div class="white-div">
+                                 <img class="white-heart"src="icons/white-heart.svg">
+                              </div>
+                           </div>
+                           <div class="places-box-second">
+                              <div class="places-box-content-upper">
+                                 <a href="#">
+                                    <h4></h4>
+                                 </a>
+                              </div>
+                              <div class="places-box-content-lower">
+                                 <p>
+                                    <img src="icons/icon1.svg">
+                                    Nəsimi, Bakı
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div id="group">
+                     <div class="places-top">
+                        <div class="places-top-left">
+                           <h2 style="margin: 0;"></h2>
+                           <p style="font-size: 18px;">Xüsusi gününüzdə dəbli görünün</p>
+                        </div>
+                        <div class="places-top-right">
+                           <a class="right-button" href="#">
+                           <img src="icons/white-plus.svg">
+                           Hamısına bax</a>
+                        </div>
+                     </div>
+                     <div class="flex-container">
+                        <div class="places-bottom">
+                           <div class="places-box">
+                              <img src="images/beauty-salon1.jpg">
+                              <div class="white-div">
+                                 <img class="white-heart"src="icons/white-heart.svg">
+                              </div>
+                           </div>
+                           <div class="places-box-second">
+                              <div class="places-box-content-upper">
+                                 <a href="#">
+                                    <h4></h4>
+                                 </a>
+                              </div>
+                              <div class="places-box-content-lower">
+                                 <p>
+                                    <img src="icons/icon1.svg">
+                                    Yasamal, Bakı
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="places-bottom">
+                           <div class="places-box">
+                              <img src="images/beauty-salon2.jpg">
+                              <div class="white-div">
+                                 <img class="white-heart"src="icons/white-heart.svg">
+                              </div>
+                           </div>
+                           <div class="places-box-second">
+                              <div class="places-box-content-upper">
+                                 <a href="#">
+                                    <h4></h4>
+                                 </a>
+                              </div>
+                              <div class="places-box-content-lower">
+                                 <p>
+                                    <img src="icons/icon1.svg">
+                                    Yasamal, Bakı
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="places-bottom">
+                           <div class="places-box">
+                              <img src="images/beauty-salon3.jpg">
+                              <div class="white-div">
+                                 <img class="white-heart"src="icons/white-heart.svg">
+                              </div>
+                           </div>
+                           <div class="places-box-second">
+                              <div class="places-box-content-upper">
+                                 <a href="#">
+                                    <h4></h4>
+                                 </a>
+                              </div>
+                              <div class="places-box-content-lower">
+                                 <p>
+                                    <img src="icons/icon1.svg">
+                                    Nəsimi, Bakı
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="places-bottom">
+                           <div class="places-box">
+                              <img src="images/beauty-salon4.jpeg">
+                              <div class="white-div">
+                                 <img class="white-heart"src="icons/white-heart.svg">
+                              </div>
+                           </div>
+                           <div class="places-box-second">
+                              <div class="places-box-content-upper">
+                                 <a href="#">
+                                    <h4></h4>
+                                 </a>
+                              </div>
+                              <div class="places-box-content-lower">
+                                 <p>
+                                    <img src="icons/icon1.svg">
+                                    Yasamal, Bakı
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div id="group">
+                     <div class="places-top">
+                        <div class="places-top-left">
+                           <h2 style="margin: 0;"></h2>
+                           <p style="font-size: 18px;">Ən peşəkar çiçəkçilər - məkan dekorasiyası, gəlin buketi, maşın bəzədilməsi</p>
+                        </div>
+                        <div class="places-top-right">
+                           <a class="right-button" href="#">
+                           <img src="icons/white-plus.svg">
+                           Hamısına bax</a>
+                        </div>
+                     </div>
+                     <div class="flex-container">
+                        <div class="places-bottom">
+                           <div class="places-box">
+                              <img src="images/flower1.jpg">
+                              <div class="white-div">
+                                 <img class="white-heart"src="icons/white-heart.svg">
+                              </div>
+                           </div>
+                           <div class="places-box-second">
+                              <div class="places-box-content-upper">
+                                 <a href="#">
+                                    <h4></h4>
+                                 </a>
+                              </div>
+                              <div class="places-box-content-lower">
+                                 <p>
+                                    <img src="icons/icon1.svg">
+                                    Yasamal, Bakı
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="places-bottom">
+                           <div class="places-box">
+                              <img src="images/flower2.jpg">
+                              <div class="white-div">
+                                 <img class="white-heart"src="icons/white-heart.svg">
+                              </div>
+                           </div>
+                           <div class="places-box-second">
+                              <div class="places-box-content-upper">
+                                 <a href="#">
+                                    <h4></h4>
+                                 </a>
+                              </div>
+                              <div class="places-box-content-lower">
+                                 <p>
+                                    <img src="icons/icon1.svg">
+                                    Yasamal, Bakı
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="places-bottom">
+                           <div class="places-box">
+                              <img src="images/flower3.jpg">
+                              <div class="white-div">
+                                 <img class="white-heart"src="icons/white-heart.svg">
+                              </div>
+                           </div>
+                           <div class="places-box-second">
+                              <div class="places-box-content-upper">
+                                 <a href="#">
+                                    <h4></h4>
+                                 </a>
+                              </div>
+                              <div class="places-box-content-lower">
+                                 <p>
+                                    <img src="icons/icon1.svg">
+                                    Yasamal, Bakı
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="places-bottom">
+                           <div class="places-box">
+                              <img src="images/flower4.jpg">
+                              <div class="white-div">
+                                 <img class="white-heart"src="icons/white-heart.svg">
+                              </div>
+                           </div>
+                           <div class="places-box-second">
+                              <div class="places-box-content-upper">
+                                 <a href="#">
+                                    <h4></h4>
+                                 </a>
+                              </div>
+                              <div class="places-box-content-lower">
+                                 <p>
+                                    <img src="icons/icon1.svg">
+                                    Yasamal, Bakı
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="features-container">
+            <div class="features-content">
+               <div class="div-1110">
+                  <div class="center-title">
+                     <h3>Azərbaycanın ən geniş evlilik planlama və <br> toy hazırlığı platforması</h3>
+                     <p style="margin-bottom: 60px;">Cütlükləri və bu sektorda fəaliyyət göstərən peşəkarları birləşdirdik</p>
+                  </div>
+                  <div class="flex-container">
+                     <div class="feature-box">
+                        <div class="image-div">
+                           <img src="icons/feature-icon1.png">
+                        </div>
+                        <div class="content">
+                           <p class="bold">Bütün peşəkarlar bir ünvanda</p>
+                           <p style="font-size: 18px;">Azərbaycanda toy sektorunda <br> fəaliyyət göstərən bütün peşəkarları <br> bir ünvanda birləşdirdik</p>
+                        </div>
+                     </div>
+                     <div class="feature-box">
+                        <div class="image-div">
+                           <img src="icons/feature-icon2.png">
+                        </div>
+                        <div class="content">
+                           <p class="bold">Rahat istifadə</p>
+                           <p style="font-size: 18px;">İstifadəçiləri düşünərək hazırlanan <br> platformamızı bütün cihazlardan <br> rahat istifadə bilərsiniz</p>
+                        </div>
+                     </div>
+                     <div class="feature-box">
+                        <div class="image-div">
+                           <img src="icons/feature-icon3.png">
+                        </div>
+                        <div class="content">
+                           <p class="bold">Ətraflı məlumat bazası</p>
+                           <p style="font-size: 18px;">Peşəkarlar haqqında geniş <br> informasiya bazası seçim etməyini <br> asanlaşdıracaq</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+          <div class="home-advice">
+            <div class="group">
+               <div class="div-1110">
+                  <div class="places-top">
+                     <div class="places-top-left">
+                        <h2 style="margin:0; color: #3a3a3a;">Kəşf et</h2>
+                        <p style="font-size: 18px;">Evlilik planlama və toy hazırlığı üçün məsləhətlər</p>
+                     </div>
+                     <div class="places-top-right">
+                        <a class="right-button" href="#">
+                        <img src="icons/white-plus.svg">
+                        Hamısına bax</a>
+                     </div>
+                  </div>
+
+
+
+                  <div id="home-advice-bottom">
+                     <div class="advice-box">
+                        <div class="upper">
+                           <img src="images/important1.jpg">
+                           <a href="#">Davamını oxu</a>
+                        </div>
+                        <div class="lower">
+                           <a href="#">Toy günündən öncə dəriyə qulluq</a>
+                           <div class="view-date">
+                              <p class="view">
+                                 <img src="icons/person.svg">
+                                 Wed.az
+                              </p>
+                              <p class="date">
+                                 <img src="icons/time.svg">
+                                 30 dek 2019
+                              </p>
+                           </div>
+                            <p style="margin-bottom: 0;">Toy gününüzdə gözəlliyiniz və zərafətinizlə ətrafa işıq <br> saçmaq üçün bəzən professional bir vizajist tərəfindən <br> edilən makiyaj belə kifayət etməyə bilər.</p> 
+                        </div>
+                     </div>
+                     <div class="advice-box">
+                        <div class="upper">
+                           <img src="images/important2.jpg">
+                           <a href="#">Davamını oxu</a> 
+                         </div>
+                        <div class="lower"> 
+                           <a href="#">Toy dəvətnaməsi seçimində diqqət etməli <br> olduğunuz 5 məqam</a>
+                           <div class="view-date">
+                              <p class="view">
+                                 <img src="icons/person.svg">
+                                 Wed.az
+                               </p>
+                              <p class="date"> 
+                                 <img src="icons/time.svg">
+                                 30 dek 2019   
+                               <p>  
+                           </div> 
+                           <p style="margin-bottom: 0;">Artıq hazırlıqlar başlayıb və gözlənilən gün <br> yaxınlaşmaqdadır. Bu qarışıqlıqlar içərisində isə <br> gözünüzdən yayınacaq bəzi məqamlar ola bilər.</p> -->
+                         </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>  
+         <div class="features-second-container">
+            <div class="features-second-content">
+               <div class="div-1110">
+                  <div class="flex-container">
+                     <div class="features-second-box" style="border: 2px solid rgba(83,43,196,.15);">
+                        <div class="icon-box">
+                           <img src="icons/bride-groom.png">
+                        </div>
+                        <h3>Toya hazırlaşan cütlüksünüz?</h3>
+                        <p style="font-size: 18px; margin-bottom: 40px;">Platformamıza qoşularaq toy hazırlığınızı daha <br> asan, praktik və sürətli edin</p>
+                        <a class="btn btn-full" href="#">Qeydiyyat</a>
+                     </div>
+                     <div class="features-second-box" style="border: 2px solid rgba(247,67,93,.15);">
+                        <div class="icon-box">
+                           <img src="icons/owner.png">
+                        </div>
+                        <h3>Biznes sahibsiniz?</h3>
+                        <p style="font-size: 18px; margin-bottom: 40px;">Toy biznesinizi <br> bizimlə böyüdün</p>
+                        <a class="btn btn-ghost" href="#">Qeydiyyat</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <footer>
+            <div class="footer-first-container">
+               <div class="footer-first-content">
+                  <div class="div-1110">
+                     <div class="flex-container">
+                        <div class="header">
+                           <h3>TOY MƏKANLARI</h3>
+                           <div class="footer-menu">
+                              <a href="#">Şadlıq sarayı</a>
+                              <a href="#">Otel</a>
+                              <a href="#">Restoran</a>
+                              <a href="#">Açıq Hava</a>
+                           </div>
+                        </div>
+                        <div class="header">
+                           <h3>TOY HAZIRLIĞI</h3>
+                           <div class="center">
+                              <div class="footer-menu-center">
+                                 <a href="#">Gəlinlik</a>
+                                 <a href="#">Bəylik və Kişi Geyimi</a>
+                                 <a href="#">Fotoqraf</a>
+                                 <a href="#">Videoqraf</a>
+                                 <a href="#">Təşkilatçı</a>
+                              </div>
+                              <div class="footer-menu-center">
+                                 <a href="#">Keyterinq</a>
+                                 <a href="#">Xına</a>
+                                 <a href="#">Çiçəkçi</a>
+                                 <a href="#">Dəvətnamə</a>
+                                 <a href="#">Ziyafət Geyimi</a>
+                              </div>
+                              <div class="footer-menu-center">
+                                 <a href="#">Gözəllik Mərkəzi</a>
+                                 <a href="#">Bərbər</a>
+                                 <a href="#">Rəqs Kursu</a>
+                                 <a href="#">Şokolad və Xonça</a>
+                                 <a href="#">Şirniyyat və Tort</a>
+                                 <a href="#">Estetik və Spa Mərkəzi</a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="header">
+                           <h3>WED.AZ</h3>
+                           <div class="footer-menu">
+                              <a href="#">Haqqımızda</a>
+                              <a href="#">Əlaqə</a>
+                              <a href="#">Kəşf et</a>
+                              <a href="#">Kampaniyalar</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="footer-colored">
+               <div class="footer-colored-content">
+                  <div class="div-1110">
+                     <div class="flex-container">
+                        <div class="left">
+                           <a href="#">
+                           <img src="icons/facebook.svg">
+                           Facebook
+                           </a>
+                           <a href="#">
+                           <img src="icons/youtube.svg">
+                           YouTube
+                           </a>
+                           <a href="#">
+                           <img src="icons/instagram.svg">
+                           Instagram
+                           </a>
+                        </div>
+                        <div class="right">
+                           <a href="#">Biznes Partnyor</a>
+                           <a href="#">Partnyor girişi</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="footer-second-container">
+               <div class="footer-second-content">
+                  <div class="div-1110">
+                     <div class="flex-container">
+                        <p>© Saytın bütün hüquqları qorunur və məlumatlardan icazəsiz istifadə qadağandır.</p>
+                        <p>Bu platforma <a href="#"><strong><span style="color: #703b94;">wedpro</span></strong></a> məhsuludur.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </footer>
+      </div>
+      <script src="JS/main.js"></script>
+      <script src="JS/ajax.js"></script>
+      <script src="JS/ajax2.js"></script>
+      <script src="JS/ajax3.js"></script>
+      <script src="JS/ajax5.js"></script>
+      <script src="JS/bridal-dress-ajax.js"></script>
+   </body>
+</html>

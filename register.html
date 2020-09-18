@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <link rel="stylesheet" href="css/style.css" type="text/css">
+      <link rel="stylesheet" href="css/login.css" type="text/css">
+      <link rel="icon" href="icons/favicon_v1.ico" type="image/png">
+      <link rel="stylesheet" href="css/register.css" type="text/css">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Wed.az - Evlilik və toy hazırlığı üçün hər şey bir ünvanda</title>
+   </head>
+   <body>
+      <div class="container">
+      <div class="header-container">
+         <div class="header-top">
+            <div class="header-top-content">
+               <div class="header-left">
+                  <a href="index.html"><img class="logo" src="icons/icon.svg"></a>
+                  <div class="lang-container">
+                     <div class="lang-content">
+                        <span>AZ</span>
+                        <img src="icons/arrow.png">
+                     </div>
+                     <div class="lang-menu">
+                        <ul class="lang-dropdown">
+                           <li>EN</li>
+                           <li id="russian">RU</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="header-center"></div>
+               <div class="header-search">
+                  <input id="upper-input" type="text" placeholder="Axtar...">
+                  <img src="icons/search.svg">
+               </div>
+               <div class="header-right">
+                  <div class="flexbox-header">
+                     <div class="header-heart" style="margin-right: 10px;">
+                        <a  href="#"><img src="icons/heart.svg"></a>
+                     </div>
+                     <div class="header-account"  onclick="Display(event)">
+                        <p>Hesabım</p>
+                     </div>
+                  </div>
+                  <div id="header-dropdown" style="display: none;">
+                     <ul class="login-register">
+                        <li><a href="login.html">Giriş</a></li>
+                        <li><a href="register.html">Qeydiyyat</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="vertical-line"></div>
+         <div class="header-bottom">
+            <div class="header-bottom-content">
+               <ul class="header-bottom-menu">
+                  <li><img src="icons/icon1.svg"><span class="menu-item">TOY MƏKANLARI</span></li>
+                  <li><img src="icons/icon2.svg"><span class="menu-item">TOY HAZIRLIĞI</span></li>
+                  <li><a href="#"><img src="icons/icon3.svg"><span class="menu-item">BALAYI</span></a></li>
+                  <li><a href="#"><img src="icons/icon4.svg"><span class="menu-item">SİYAHI</span></a></li>
+                  <li><a href="#"><img src="icons/icon5.svg"><span class="menu-item">KAMPANİYALAR</span></a></li>
+                  <li><a href="#"><img src="icons/icon6.svg"><span class="menu-item">JURNAL</span></a></li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <div class="login-container">
+         <div class="login-content">
+            <div class="login-top">
+               <h1 style="font-size: 25px;">Qeydiyyat</h1>
+               <p>Hesabınız var? <a href="login.html"><span style="color:#532bc4;">Buradan</span></a> daxil olun.</p>
+            </div>
+            <div class="login-bottom">
+               <div class="login-with">
+                  <div class="login-with-num-mail">
+                     <span style="font-size: 14px;">Mobil nömrə</span>
+                     <div class="short-vertical"></div>
+                  </div>
+                  <div class="login-with-num-mail">
+                     <span style="font-size: 14px;">E-mail</span>
+                     <div class="short-vertical"></div>
+                  </div>
+               </div>
+               <div class="login-form">
+                  <input type="email" value="" placeholder="E-mail"><br>
+                  <div class="input-box">
+                     <input id="myInput" type="password" value="" placeholder="Şifrə">
+                     <img id="myImage" src="icons/eye-icon-open.png" onclick="ChangeImageVisibility()">
+                     <input type="number" value="">
+                  </div>
+               </div>
+               <button class="login-button">Qeydiyyat</button><br>
+               <p class="social-title">Sosial şəbəkələrlə daxil ol</p>
+               <div class="social-buttons">
+                  <a href="#" class="button button-left">
+                  <img src="icons/blue-facebook.png">
+                  </a>
+                  <a href="#" class="button button-right">
+                  <img src="icons/google.png">
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <footer>
+         <div class="footer-first-container">
+            <div class="footer-first-content">
+               <div class="div-1110">
+                  <div class="flex-container">
+                     <div class="header">
+                        <h3>TOY MƏKANLARI</h3>
+                        <div class="footer-menu">
+                           <a href="#">Şadlıq sarayı</a>
+                           <a href="#">Otel</a>
+                           <a href="#">Restoran</a>
+                           <a href="#">Açıq Hava</a>
+                        </div>
+                     </div>
+                     <div class="header">
+                        <h3>TOY HAZIRLIĞI</h3>
+                        <div class="center">
+                           <div class="footer-menu-center">
+                              <a href="#">Gəlinlik</a>
+                              <a href="#">Bəylik və Kişi Geyimi</a>
+                              <a href="#">Fotoqraf</a>
+                              <a href="#">Videoqraf</a>
+                              <a href="#">Təşkilatçı</a>
+                           </div>
+                           <div class="footer-menu-center">
+                              <a href="#">Keyterinq</a>
+                              <a href="#">Xına</a>
+                              <a href="#">Çiçəkçi</a>
+                              <a href="#">Dəvətnamə</a>
+                              <a href="#">Ziyafət Geyimi</a>
+                           </div>
+                           <div class="footer-menu-center">
+                              <a href="#">Gözəllik Mərkəzi</a>
+                              <a href="#">Bərbər</a>
+                              <a href="#">Rəqs Kursu</a>
+                              <a href="#">Şokolad və Xonça</a>
+                              <a href="#">Şirniyyat və Tort</a>
+                              <a href="#">Estetik və Spa Mərkəzi</a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="header">
+                        <h3>WED.AZ</h3>
+                        <div class="footer-menu">
+                           <a href="#">Haqqımızda</a>
+                           <a href="#">Əlaqə</a>
+                           <a href="#">Kəşf et</a>
+                           <a href="#">Kampaniyalar</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="footer-colored">
+            <div class="footer-colored-content">
+               <div class="div-1110">
+                  <div class="flex-container">
+                     <div class="left">
+                        <a href="#">
+                        <img src="icons/facebook.svg">
+                        Facebook
+                        </a>
+                        <a href="#">
+                        <img src="icons/youtube.svg">
+                        YouTube
+                        </a>
+                        <a href="#">
+                        <img src="icons/instagram.svg">
+                        Instagram
+                        </a>
+                     </div>
+                     <div class="right">
+                        <a href="#">Biznes Partnyor</a>
+                        <a href="#">Partnyor girişi</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="footer-second-container">
+            <div class="footer-second-content">
+               <div class="div-1110">
+                  <div class="flex-container">
+                     <p>© Saytın bütün hüquqları qorunur və məlumatlardan icazəsiz istifadə qadağandır.</p>
+                     <p>Bu platforma <a href="#"><strong><span style="color: #703b94;">wedpro</span></strong></a> məhsuludur.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <script src="JS/main.js"></script>
+   </body>
+</html>
